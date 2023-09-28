@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>knockout</title>
+    <link rel="stylesheet" href="knockout.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <header>
+<!--Titeln för spelet och bilden på tärningar bredvid-->
+        <h1 >KNOCKOUT
+
+           <p> Dice game!</p>
+            
+        </h1>
+
+        <img src="img/dice-clipart-transparent-13.png" alt="diceMain">
+
+        
+
+        
+
+    </header>
+
+
+    <main>
+
+
+       
+<!--Reglerna för spelet-->
+      <div id="main-rules">
+
+        
+
+        <h2>Rules:</h2>
+        <ul>
+            <li>The player choose 6, 7, 8 or 9 to be their knockoutnumber.</li>
+            <li>When pressing the button two separate dice will roll.</li>
+            <li>If the combined numbers of the dice equal the players chosen number the player gets knockout and looses. If not he keeps playing and the number is added to total points.</li>
+            <li>The goal is to get the highest total points without getting knockout! </li>
+        </ul>
+
+
+      </div>
+
+<!--En div för tärningsbilderna att skapas i-->
+      <div id="dice"></div>
+
+<!--En div för GAMEOVER och KNOCKOUT att skapas i-->
+      <div id="gameover"></div>
+
+
+    </main>
+
+
+
+    <footer>
+<!--Text under reglerna samt input fältet och rolldice knappen. -->
+      <div id="knockoutnumber">
+
+        <h2 id="letsplay"> Lets play!</h2>
+        <p>INSERT KNOCKOUTNUMBER</p>
+
+         <input type="number"  id="numselect" name="quantity" value="" min="6" max="9" >
+         <button id="btn" onclick="returnNum()">ROLLDICE</button>
+
+          
+      </div>
+
+<!--Div för SCORE räknaren att skapas i-->
+      <div id="counter"></div>
+
+
+    </footer>
+
+</div>
+
+    <script src="knockout.js"></script>
+</body>
+</html>

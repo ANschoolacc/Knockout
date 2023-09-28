@@ -1,0 +1,279 @@
+
+/*Box för hela sidan. Centrerar och stretchar.
+Storlek på sidan och borttagning av överflöd*/
+body {
+
+    background: #eee;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    
+    height: 97.5vh;
+    overflow: hidden; 
+
+}
+
+/*Boxen som spelet är i. bredd, skugga, centrering av saker inom boxen. Färg på boxen. 
+Centrerar och gör till column.*/
+div.wrapper {
+
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    
+    width: 650px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: rgb(88, 167, 169);
+
+}
+
+/*Box för titlen som centrerar*/
+div.wrapper header  {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Titelns färg, storlek, font och skugga. */
+div.wrapper header h1 {
+
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    text-shadow: 0px 2px 2px rgb(255, 255, 255);
+
+}
+
+/*Ta bort så ens cursor inte ändras när man hovrar över texten i headern*/
+div.wrapper header:hover {
+
+    cursor: default;
+
+}
+
+/*Undertitelns färg, font, storlek, skugga, och vinkel. */
+div.wrapper header p {
+
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    transform: rotate(15deg);
+    text-shadow: 0px 2px 2px rgb(0, 0, 0);
+     
+}
+
+/*Bilden bredvid titelns storlek.*/
+div.wrapper header img {
+
+    width: 110px;
+
+}
+
+/*Box för main som centrerar och gör till column*/
+div.wrapper main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+/*Boxen för reglerna. Centrerar och gör till column. Bakgrundsfärg, border färg, border stil, border radius.*/
+div.wrapper main div#main-rules {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    border-style: solid;
+    border-color: red;
+    background-color: red;
+    border-radius: 10px;
+    
+}
+
+/*Ta bort så ens cursor inte ändras när man hovrar över någon text i main*/
+div.wrapper main:hover {
+
+    cursor: default;
+
+}
+
+/*Reglernas titel. Färg, storlek, font, skugga.*/
+div.wrapper main div#main-rules h2 {
+
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.855);
+      
+}
+
+/*Regel listans box. Gör till column, sprider ut texten jämt, höjd och bredd på boxen. 
+Färg, storlek, font, skugga, tjocklek på texten. */
+div.wrapper main div#main-rules ul {
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+    height: 200px;
+    width: 400px;
+
+
+    color: whitesmoke;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.855);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 120%;
+    font-weight: 500;
+
+}
+/*Box för gamover och knockout vid förlust. Centrerar, gör till column.
+Storlek, färg, font och skugga på text.*/
+div.wrapper main div#gameover {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 120%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    
+    text-shadow: 0px 2px 2px rgb(255, 255, 255);
+    
+}
+/*Box för footern. Centrerar, gör till column. Gör så cursor inte ändras vid hover.*/
+div.wrapper footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+}
+/*Box för innehållet i id= knockoutnumber. Centrerar, gör till column.*/
+div.wrapper footer div#knockoutnumber {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+/*Box för id= knockoutnumber Letsplay text. Centrerar text.
+Storlek, färg, font, skugga, margin. */
+div.wrapper footer div#knockoutnumber h2 {
+
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    text-shadow: 0px 2px 2px rgb(255, 250, 250);
+    margin: 0px;
+    
+}
+/*Texten ovanför inputfältet för knockoutnumber. 
+Storlek, färg, font, skugga, margin, decoration.*/
+div.wrapper footer div#knockoutnumber p {
+
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    text-shadow: 0px 2px 2px rgb(255, 250, 250);
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+    margin-bottom: 0px;
+    
+}
+/*Inputfältets padding, margin, textstorlek, font, textskugga, textfärg, bakgrundfärg, 
+borderfärg, borderstyle, borderskugga, borderradius. Gör så
+cursor inte ändras vid hover.
+ */
+div.wrapper footer div#knockoutnumber input {
+    
+    font-size: 110%;
+    font-weight: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: whitesmoke;
+
+    background-color: red;
+    border-color: whitesmoke;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    border-radius: 8px;
+    border-style: solid;
+
+    caret-color: transparent;
+    cursor: default;
+    outline: none;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+   
+}
+/*Alla knappar på sidan. Margin, padding, textstorlek, texttjocklek, font, textskugga, textfärg, bakgrundfärg, 
+borderfärg, borderstyle, borderskugga, borderradius.
+Fördröjning vid hover. */
+div.wrapper footer button {
+
+    font-size: 110%;
+    font-weight: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: whitesmoke;
+
+    background-color: red;
+    border-color: red;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    border-radius: 8px;
+    border-style: solid;
+
+    transition: all 0.3s;
+
+    margin-bottom: 10px;
+}
+
+/*Ändrar färg på knappar vid hover*/
+div.wrapper footer button:hover {
+
+    background-color: rgb(228, 0, 0);
+    border-color: rgb(228, 0, 0);
+
+}
+/*Skuggar rungt knappar vid klick*/
+div.wrapper footer button:active {
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+
+}
+/*Score räknaren box. Centrerar texten. Margin, textstorlek, font, textskugga, textfärg.*/
+div.wrapper footer h1 {
+
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    text-shadow: 0px 2px 2px rgb(255, 255, 255);
+    margin-bottom: 40px;
+    
+}
+
+
+/*Storlek och margin för tärningsbilderna som genereras.*/
+img {
+
+    width: 150px;
+    margin: 20px;
+
+}
